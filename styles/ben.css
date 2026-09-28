@@ -1,0 +1,28 @@
+h1 {
+    font-size:90px;
+    margin-top:0px;
+    font-family:"Wellfleet"
+}
+
+.header {
+    display:flex;
+    justify-content:center;
+}
+
+.dog {
+    background-color:aqua;
+    width:600px;
+    margin-left:15px;
+    padding:10px;
+    border-radius:10px;
+    border-style:solid;
+    min-height:100px;
+}
+
+.dog img {
+    width:200px;
+}
+
+div p {
+    font-size:20px;
+}
