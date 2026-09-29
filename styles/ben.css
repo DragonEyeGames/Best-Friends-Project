@@ -21,6 +21,90 @@ h1 {
 
 .dog img {
     width:200px;
+    border-radius:10px;
+    border-style:dashed;
+    border-width:5px;
+    background-color:white;
+}
+
+.dog div {
+    display:flex;
+    justify-content:space-evenly;
+    margin-left:0px;
+    padding-left:0px;
+}
+
+.vertical_text {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:rgb(110, 236, 177);
+    border-radius:10px;
+    border-style:solid;
+}
+
+.vertical_text p {
+    margin:0;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.taxalottle {
+    transform-origin: center; 
+    position:absolute;
+    animation:float ease-in-out infinite alternate 2s;
+    top:30px;
+    right:100px;
+    opacity:100%;
+}
+
+@keyframes float {
+    from {
+    transform: translateY(0) rotate(-15deg);
+  }
+  to {
+    transform: translateY(0px) rotate(15deg);/* Moves up by 30px */
+  }
+}
+
+.taxalottle_logo {
+    position:absolute;
+    top:320px;
+    right:115px;
+    background-color:rgb(99, 79, 13);
+    padding:10px;
+    border-radius:10px;
+    border-style:solid;
+}
+
+.taxalottle_logo p {
+    margin:0;
+    padding:0;
+    font-size:20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:white;
+}
+
+.taxalottle.two {
+    opacity:80%;
+    animation-delay:-3.75s;
+}
+
+.taxalottle.three {
+    opacity:50%;
+    animation-delay:-3.5s;
+}
+
+.taxalottle.four {
+    opacity:30%;
+    animation-delay:-3.25s;
+}
+
+.taxalottle.five {
+    opacity:10%;
+    animation-delay:-3s;
 }
 
 div p {
