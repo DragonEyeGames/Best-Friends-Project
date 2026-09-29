@@ -1,0 +1,74 @@
+body{
+    background-color:aquamarine;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+#gameboy-text {
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: clamp(20px, 4vw, 60px);
+    letter-spacing: 1px;
+}
+
+#gameboy-text span {
+    display: inline-block;
+    opacity: 0;
+    animation: rainbowBounce 0.8s cubic-bezier(0.25, 1.5, 0.5, 1) forwards;
+}
+
+@keyframes rainbowBounce {
+    0% {
+        opacity: 0;
+        transform: translateY(-250px);
+        color: #ff0000;
+    }
+
+    15% {
+        opacity: 1;
+        color: #ff7a00;
+    }
+
+    30% {
+        transform: translateY(30px);
+        color: #ffff00;
+    }
+
+    45% {
+        transform: translateY(-20px);
+        color: #00ff00;
+    }
+
+    60% {
+        transform: translateY(10px);
+        color: #00ffff;
+    }
+
+    75% {
+        transform: translateY(-5px);
+        color: #0080ff;
+    }
+
+    90% {
+        transform: translateY(2px);
+        color: #8000ff;
+    }
+
+    95% {
+        opacity: 1;
+        transform: translateY(0);
+        color: #ff00ff;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        color: #000000;
+    }
+}
