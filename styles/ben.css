@@ -133,4 +133,64 @@ a>span{
     border-radius:10px;
     border-color:black;
     filter:saturate(250%);
+    position:absolute;
+    right:125px;
+     /* Syntax: box-shadow: h-offset v-offset blur spread color; */
+    box-shadow: 20px 20px 1px 5px rgba(0, 0, 0, 0.3), 15px 15px 1px 5px rgba(0, 0, 0, 0.3), 10px 10px 1px 5px rgba(0, 0, 0, 0.3), 5px 5px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+#about_ben {
+    position:absolute;
+    width:400px;
+    top:190px;
+    left:800px;
+    background-color:green;
+    color:rgb(120, 255, 248);
+    padding:15px;
+    margin:1px;
+    border-radius:70px;
+    border-style:double;
+    border-color:black;
+    border-width:5px;
+
+    box-shadow: 0px 0px 5px 15px rgb(0, 60, 255, .2), 0px 0px 5px 10px rgb(0, 60, 255, .5), 0px 0px 5px 5px rgb(0, 60, 255, .8);
+
+}
+
+#facts {
+    position:absolute;
+    bottom:100px;
+    right:950px;
+    background-color:rgb(128, 33, 172);
+    color:white;
+    padding:5px;
+    border-radius:9px;
+    border-style:outset;
+    border-color:rgb(0, 37, 0);
+    border-width:6px;
+}
+
+#links {
+    background-color:chartreuse;
+    position:absolute;
+    left:100px;
+    bottom:150px;
+    padding:10px 15px 25px 15px;
+    border-radius:15px;
+    border-style:dotted;
+    border-color:rgb(255, 63, 63);
+}
+
+iframe {
+    width:480px;
+    height:270px;
+}
+
+#pokemon {
+    width:485px;
+    height:270px;
+    position:absolute;
+    top:400px;
+    left:1000px;
+    border-style:solid;
 }
