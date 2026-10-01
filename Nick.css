@@ -1,81 +1,187 @@
-body{
-    background-color:aquamarine;
+body {
+background-color: aquamarine;
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+color: #111;
 }
 
-h1{
+header {
+width: 100%;
+padding: 30px 0;
+background-color: #00c9a7;
+border-bottom: 5px solid #111;
+}
+
+.header-box {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 0;
+    box-sizing: border-box;
     text-align: center;
-    font-size: 50px;
+    overflow: hidden;
 }
 
-ul{
-    font-weight:bold;
+h1 {
+text-align: center;
 }
 
-#vid{
+h2 {
+font-size: 32px;
+}
+
+p {
+font-size: 18px;
 }
 
 #gameboy-text {
     width: 100%;
+    margin: 0;
+    padding: 0 10px;
+    box-sizing: border-box;
     text-align: center;
     white-space: nowrap;
     font-family: monospace;
     font-weight: bold;
-    font-size: clamp(20px, 4vw, 60px);
+    font-size: clamp(16px, 2.5vw, 40px);
     letter-spacing: 1px;
 }
 
 #gameboy-text span {
-    display: inline-block;
-    opacity: 0;
-    animation: rainbowBounce 0.8s cubic-bezier(0.25, 1.5, 0.5, 1) forwards;
+display: inline-block;
+opacity: 0;
+animation: rainbowBounce 0.8s cubic-bezier(0.25, 1.5, 0.5, 1) forwards;
+}
+
+main {
+width: 90%;
+margin: 30px auto;
+}
+
+section {
+margin: 30px 0;
+padding: 25px;
+background-color: rgba(255, 255, 255, 0.6);
+border: 3px solid #111;
+}
+
+ul {
+font-weight: bold;
+font-size: 18px;
+line-height: 1.8;
+}
+
+.filtered-image {
+width: 300px;
+height: 200px;
+object-fit: cover;
+border: 5px solid #111;
+filter: grayscale(70%) contrast(120%);
+display: block;
+margin: 20px auto;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+font-size: 18px;
+}
+
+th,
+td {
+padding: 12px;
+border: 2px solid #111;
+text-align: left;
+}
+
+th {
+background-color: #00c9a7;
+}
+
+.stream {
+text-align: center;
+}
+
+iframe {
+max-width: 100%;
+border: 5px solid #111;
+}
+
+.home-link {
+text-align: center;
+margin: 30px;
+}
+
+.home-link a {
+display: inline-block;
+padding: 15px 30px;
+background-color: #111;
+color: white;
+font-size: 20px;
+text-decoration: none;
+border: 3px solid #00c9a7;
+}
+
+.home-link a:hover {
+opacity: 0.7;
+}
+
+footer {
+width: 100%;
+padding: 20px 0;
+background-color: #111;
+color: white;
+text-align: center;
 }
 
 @keyframes rainbowBounce {
-    0% {
-        opacity: 0;
-        transform: translateY(-60px);
-        color: #ff0000;
-    }
+0% {
+opacity: 0;
+transform: translateY(-60px);
+color: #ff0000;
+}
 
-    12.5% {
-        opacity: 1;
-        color: #ff7a00;
-    }
+12.5% {
+    opacity: 1;
+    color: #ff7a00;
+}
 
-    25% {
-        transform: translateY(30px);
-        color: #ffff00;
-    }
+25% {
+    transform: translateY(30px);
+    color: #ffff00;
+}
 
-    37.5% {
-        transform: translateY(-20px);
-        color: #00ff00;
-    }
+37.5% {
+    transform: translateY(-20px);
+    color: #00ff00;
+}
 
-    50% {
-        transform: translateY(10px);
-        color: #00ffff;
-    }
+50% {
+    transform: translateY(10px);
+    color: #00ffff;
+}
 
-    62.5% {
-        transform: translateY(-5px);
-        color: #0080ff;
-    }
+62.5% {
+    transform: translateY(-5px);
+    color: #0080ff;
+}
 
-    75% {
-        transform: translateY(2px);
-        color: #8000ff;
-    }
+75% {
+    transform: translateY(2px);
+    color: #8000ff;
+}
 
-    87.5% {
-        opacity: 1;
-        transform: translateY(0);
-        color: #ff00ff;
-    }
+87.5% {
+    opacity: 1;
+    transform: translateY(0);
+    color: #ff00ff;
+}
 
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-        color: #000000;
-    }
+100% {
+    opacity: 1;
+    transform: translateY(0);
+    color: #000000;
+}
+
 }
