@@ -188,9 +188,20 @@ iframe {
 
 #pokemon {
     width:485px;
-    height:270px;
+    height:317px;
     position:absolute;
     top:400px;
     left:1000px;
     border-style:solid;
+    text-align:center;
+    background-color:black;
+    border-style:solid;
+    border-color:rgb(122, 0, 0);
+    border-width:10px;
+}
+
+#pokemon p {
+    color:white;
+    margin-top:5px;
+    margin-bottom:0px;
 }
