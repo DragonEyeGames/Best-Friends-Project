@@ -1,0 +1,207 @@
+h1 {
+    font-size:90px;
+    margin-top:0px;
+    font-family:"Wellfleet"
+}
+
+header {
+    display:flex;
+    justify-content:center;
+}
+
+#dog {
+    background-color:aqua;
+    width:600px;
+    margin-left:15px;
+    padding:10px;
+    border-radius:10px;
+    border-style:solid;
+    min-height:100px;
+}
+
+#dog img {
+    width:200px;
+    border-radius:10px;
+    border-style:dashed;
+    border-width:5px;
+    background-color:white;
+}
+
+#dog div {
+    display:flex;
+    justify-content:space-evenly;
+    margin-left:0px;
+    padding-left:0px;
+}
+
+.vertical_text {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:rgb(110, 236, 177);
+    border-radius:10px;
+    border-style:solid;
+}
+
+.vertical_text p {
+    margin:0;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.taxalottle {
+    transform-origin: center; 
+    position:absolute;
+    animation:float ease-in-out infinite alternate 2s;
+    top:30px;
+    right:100px;
+    opacity:100%;
+}
+
+@keyframes float {
+    from {
+    transform: translateY(0) rotate(-15deg);
+  }
+  to {
+    transform: translateY(0px) rotate(15deg);/* Moves up by 30px */
+  }
+}
+
+#taxalottle_logo {
+    position:absolute;
+    top:320px;
+    right:115px;
+    background-color:rgb(99, 79, 13);
+    padding:10px;
+    border-radius:10px;
+    border-style:solid;
+}
+
+.taxalottle_logo p {
+    margin:0;
+    padding:0;
+    font-size:20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:white;
+}
+
+.taxalottle.two {
+    opacity:80%;
+    animation-delay:-3.75s;
+}
+
+.taxalottle.three {
+    opacity:50%;
+    animation-delay:-3.5s;
+}
+
+.taxalottle.four {
+    opacity:30%;
+    animation-delay:-3.25s;
+}
+
+.taxalottle.five {
+    opacity:10%;
+    animation-delay:-3s;
+}
+
+div p {
+    font-size:20px;
+}
+
+a {
+    width:200px;
+    height:70px;
+    background-color:green;
+    margin:10px;
+    padding:10px;
+    border-radius:15px;
+    border-style:solid;
+    border-color:rgb(0, 49, 0);
+}
+
+a>span{
+    color:white;
+    font-size:15px;
+    font-weight:bold;
+}
+
+#sunset {
+    border-style:outset;
+    border-radius:10px;
+    border-color:black;
+    filter:saturate(250%);
+    position:absolute;
+    right:125px;
+     /* Syntax: box-shadow: h-offset v-offset blur spread color; */
+    box-shadow: 20px 20px 1px 5px rgba(0, 0, 0, 0.3), 15px 15px 1px 5px rgba(0, 0, 0, 0.3), 10px 10px 1px 5px rgba(0, 0, 0, 0.3), 5px 5px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+#about_ben {
+    position:absolute;
+    width:400px;
+    top:190px;
+    left:800px;
+    background-color:green;
+    color:rgb(120, 255, 248);
+    padding:15px;
+    margin:1px;
+    border-radius:70px;
+    border-style:double;
+    border-color:black;
+    border-width:5px;
+
+    box-shadow: 0px 0px 5px 15px rgb(0, 60, 255, .2), 0px 0px 5px 10px rgb(0, 60, 255, .5), 0px 0px 5px 5px rgb(0, 60, 255, .8);
+
+}
+
+#facts {
+    position:absolute;
+    bottom:100px;
+    right:950px;
+    background-color:rgb(128, 33, 172);
+    color:white;
+    padding:5px;
+    border-radius:9px;
+    border-style:outset;
+    border-color:rgb(0, 37, 0);
+    border-width:6px;
+}
+
+#links {
+    background-color:chartreuse;
+    position:absolute;
+    left:100px;
+    bottom:150px;
+    padding:10px 15px 25px 15px;
+    border-radius:15px;
+    border-style:dotted;
+    border-color:rgb(255, 63, 63);
+}
+
+iframe {
+    width:480px;
+    height:270px;
+}
+
+#pokemon {
+    width:485px;
+    height:317px;
+    position:absolute;
+    top:400px;
+    left:1000px;
+    border-style:solid;
+    text-align:center;
+    background-color:black;
+    border-style:solid;
+    border-color:rgb(122, 0, 0);
+    border-width:10px;
+}
+
+#pokemon p {
+    color:white;
+    margin-top:5px;
+    margin-bottom:0px;
+}
