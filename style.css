@@ -1,0 +1,72 @@
+#elephant {
+    animation:change ease-in-out infinite alternate .1s;
+    transition: transform .5s;
+}
+
+@keyframes change {
+    from {
+    filter: saturate(7000%) hue-rotate(0deg);
+  }
+  to {
+    filter:saturate(190px) hue-rotate(360deg);
+  }
+}
+
+#elephant:hover {
+    transform: rotate(7200000deg);
+}
+
+#waluigi {
+    animation:change ease-in-out infinite alternate .1s;
+    transition: width 1s, filter 1s, height 1s, transform 1s;
+    filter:saturate(100%) hue-rotate(0deg);
+}
+
+#waluigi:hover {
+    width:1000px !important;
+    height:auto !important;
+    filter:saturate(7000%) hue-rotate(7200deg);
+    transform: rotate(7200deg);
+}
+
+#trippy {
+    background-color:red;
+    animation:modify ease-in-out infinite alternate .2s;
+}
+
+
+@keyframes modify {
+  0%{
+    background-color:red;
+  }
+  10%{
+    background-color:blue;
+  }
+  20%{
+    background-color:yellow;
+  }
+  30%{
+    background-color:green;
+  }
+  40%{
+    background-color:purple;
+  }
+  50%{
+    background-color:black;
+  }
+  60%{
+    background-color:orange;
+  }
+  70%{
+    background-color:white;
+  }
+  80%{
+    background-color:brown;
+  }
+  90%{
+    background-color:teal;
+  }
+  100%{
+    background-color:maroon;
+  }
+}
